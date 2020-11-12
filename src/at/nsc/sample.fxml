@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<GridPane alignment="center" hgap="10" minHeight="255.0" minWidth="600.0" prefHeight="337.0" prefWidth="638.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="at.nsc.Controller">
+<GridPane alignment="center" hgap="10" minHeight="255.0" minWidth="600.0" prefHeight="337.0" prefWidth="638.0" snapToPixel="false" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="at.nsc.Controller">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -25,8 +25,8 @@
    </rowConstraints>
    <children>
       <Button fx:id="button_Convert" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#doConvertion" text="Convert" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <TextField fx:id="textField_EuroField" minHeight="8.0" minWidth="64.0" GridPane.rowIndex="3" />
-      <TextField fx:id="textField_YenField" minHeight="8.0" minWidth="64.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <TextField fx:id="textField_EuroField" minHeight="8.0" minWidth="64.0" promptText="Type in Euro-Value here" GridPane.rowIndex="3" />
+      <TextField fx:id="textField_YenField" editable="false" minHeight="8.0" minWidth="64.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
       <Label minHeight="-Infinity" minWidth="-Infinity" text="Euro" GridPane.rowIndex="2" />
       <Label minHeight="-Infinity" minWidth="-Infinity" text="Yen" GridPane.columnIndex="2" GridPane.rowIndex="2" />
       <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" text="Currency Converter" textAlignment="CENTER" GridPane.rowIndex="1">
