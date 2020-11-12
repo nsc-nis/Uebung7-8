@@ -3,13 +3,15 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="at.nsc.Controller">
+<GridPane alignment="center" hgap="10" minHeight="255.0" minWidth="600.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="at.nsc.Controller">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -19,17 +21,23 @@
       <RowConstraints />
       <RowConstraints />
       <RowConstraints />
+      <RowConstraints />
    </rowConstraints>
    <children>
-      <Button fx:id="button_Convert" alignment="CENTER" mnemonicParsing="false" onAction="#doConvertion" text="Convert" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <TextField fx:id="textField_EuroField" GridPane.rowIndex="2" />
-      <TextField fx:id="textField_YenField" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-      <Label text="Euro" GridPane.rowIndex="1" />
-      <Label text="Yen" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-      <Label alignment="CENTER" text="Currency Converter" textAlignment="CENTER">
+      <Button fx:id="button_Convert" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#doConvertion" text="Convert" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="textField_EuroField" minHeight="8.0" minWidth="64.0" GridPane.rowIndex="3" />
+      <TextField fx:id="textField_YenField" minHeight="8.0" minWidth="64.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label minHeight="-Infinity" minWidth="-Infinity" text="Euro" GridPane.rowIndex="2" />
+      <Label minHeight="-Infinity" minWidth="-Infinity" text="Yen" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" text="Currency Converter" textAlignment="CENTER" GridPane.rowIndex="1">
          <font>
             <Font size="26.0" />
          </font>
       </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
    </children>
 </GridPane>
