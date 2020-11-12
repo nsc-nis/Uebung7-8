@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<GridPane alignment="center" hgap="10" minHeight="255.0" minWidth="600.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="at.nsc.Controller">
+<GridPane alignment="center" hgap="10" minHeight="255.0" minWidth="600.0" prefHeight="337.0" prefWidth="638.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="at.nsc.Controller">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
