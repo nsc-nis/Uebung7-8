@@ -6,6 +6,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * Übung 7
+ * @author Niklas Schachl
+ * @version 1.0 , 12.11.2020
+ */
 public class Main extends Application {
 
     @Override
@@ -15,7 +20,6 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }
-
     public static void main(String[] args) {
         launch(args);
     }

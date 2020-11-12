@@ -1,8 +1,35 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="at.nsc.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="at.nsc.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Button fx:id="button_Convert" alignment="CENTER" mnemonicParsing="false" onAction="#doConvertion" text="Convert" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="textField_EuroField" GridPane.rowIndex="2" />
+      <TextField fx:id="textField_YenField" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label text="Euro" GridPane.rowIndex="1" />
+      <Label text="Yen" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label alignment="CENTER" text="Currency Converter" textAlignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
 </GridPane>
