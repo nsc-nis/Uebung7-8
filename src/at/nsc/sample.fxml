@@ -29,9 +29,9 @@
       <TextField fx:id="textField_YenField" editable="false" minHeight="8.0" minWidth="64.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
       <Label minHeight="-Infinity" minWidth="-Infinity" text="Euro" GridPane.rowIndex="2" />
       <Label minHeight="-Infinity" minWidth="-Infinity" text="Yen" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-      <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" text="Currency Converter" textAlignment="CENTER" GridPane.rowIndex="1">
+      <Label alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" text="Currency Converter" textAlignment="CENTER" GridPane.rowIndex="1">
          <font>
-            <Font size="26.0" />
+            <Font name="System Bold Italic" size="24.0" />
          </font>
       </Label>
       <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
