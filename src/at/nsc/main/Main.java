@@ -1,10 +1,8 @@
 package at.nsc.main;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
+import at.nsc.controllerView.controller_CurrencyConverter;
 
 /**Übung 8 - Main
  * @author Niklas Schachl
@@ -15,10 +13,7 @@ public class Main extends Application
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        Parent root = FXMLLoader.load(getClass().getResource("/at/nsc/controllerView/view_CurrencyConverter.fxml"));
-        primaryStage.setTitle("Übung 8");
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
+        controller_CurrencyConverter.show(primaryStage);
     }
     public static void main(String[] args) {
         launch(args);
