@@ -79,7 +79,7 @@ public class controller_CurrencyConverter implements Initializable
     {
         currencyConverter = new model_CurrencyConverter();
 
-        for (int i = 0; i < 100; i++) //Mehr als 100 Währungen werden niemals vorhanden sein, also braucht man diese Schleife auch beim hinzufügen neuer Währungen nicht ändern
+        for (int i = 0; i < currencyConverter.getIndex(); i++)
         {
             try
             {

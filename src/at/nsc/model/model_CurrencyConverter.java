@@ -22,6 +22,11 @@ public class model_CurrencyConverter
         return list_Currencies.get(index).getSign();
     }
 
+    public int getIndex()
+    {
+        return list_Currencies.size();
+    }
+
     public double doConversion(double euro, String currency)
     {
         model_Currency currentCurrency = null;
